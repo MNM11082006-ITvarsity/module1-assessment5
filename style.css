@@ -1,0 +1,86 @@
+/* Global Styles */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Character Name */
+h2 {
+    font-size: 32px;
+    color: #00bcd4;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+/* Character Image */
+.gallary {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallary img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallary img:hover {
+    transform: scale(1.05);
+}
+
+/* Bio & Power Stats */
+h4 {
+    font-size: 22px;
+    margin-top: 25px;
+    color: #fdd835;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fdd835;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+p b {
+    color: #ff9800;
+}
+
+/* Power Stats Bar */
+.stat-bar {
+    width: 80%;
+    max-width: 400px;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.stat-fill {
+    height: 10px;
+    background-color: #ff9800;
+}
+
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    .gallary img {
+        width: 200px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
